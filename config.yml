@@ -1,0 +1,31 @@
+baseURL: "change me"
+languageCode: en-us
+title: "change me"
+menu:
+  main:
+    - name: "🏡 Home [h]"
+      url: /
+      weight: 1
+    - name: categories
+      url: "categories/"
+      weight: 2
+    - name: tags
+      url: "tags/"
+      weight: 3
+
+params:
+  description: "change me"
+
+markup:
+  highlight:
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
+    noClasses: true
+  goldmark:
+    renderer:
+      unsafe: true
+
+module:
+  imports:
+    - path: github.com/barklan/hugo-dead-simple
